@@ -1,0 +1,1 @@
+# Nothing. The return statement exits the method before the puts statement can run. And it returns nill.
