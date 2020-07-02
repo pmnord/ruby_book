@@ -113,3 +113,25 @@ Writing a loop bash
 
 `for i in {1..8}; do code $i.rb; done`
 ---
+
+## Hash Methods
+
+`person.delete(:age)`
+`person.merge!(new_hash)`
+`person.empty?`
+`person.has_key?("foo")`
+`person.select {}` like filter
+`person.fetch("key")` you can specify an option to return if that key doesn't exist
+`person.to_a` works like JS's Object.entries()
+`person.keys` returns array of keys
+`person.values` returns array of values
+
+
+
+Curly braces are not required when a hash is the last argument
+```rb
+greeting("Bob", age: 62, city: "New York City")
+```
+
+> Since Ruby 1.9, hashes maintain their order
+
